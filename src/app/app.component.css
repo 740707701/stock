@@ -1,0 +1,13 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+.active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+    color: blueviolet
+}
