@@ -1,13 +1,144 @@
 
-* {
-    padding: 0;
-    margin: 0;
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #262438;
+    color: #fff;
+    font-family: 'PingFangSC-Regular';
+    font-size: 15px;
 }
-a {
-    text-decoration: none;
+.header .logo-box {
+    float: left;
+    width: 95px;
+    margin-left: 6px;
+    margin-right: 38px;
+    padding-top: 25px;
 }
-.active {
-    padding-bottom: 5px;
-    border-bottom: 2px solid red;
-    color: blueviolet
+.header .logo-box .logo {
+    width: 29px;
+    height: 29px;
+    border: 1px solid #fff;
+    display: inline-block;
+    margin-bottom: -7px;
+}
+.header .logo-box .logo-text {
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+.header .search {
+    float: left;
+    padding-top: 30px;
+}
+.header .search-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: -6px;
+}
+.header .search-input {
+    background-color: #262438;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+}
+.header .search-input::-moz-placeholder {
+    color: #8C8DA9;;
+    opacity: 1
+}
+
+.header .search-input::-ms-input-placeholder {
+    color: #8C8DA9;
+}
+
+.header .search-input::-webkit-input-placeholder {
+    color: #8C8DA9;
+}
+
+.header .user-info {
+    float: right;
+    margin-right: 64px;
+    padding-top: 30px;
+}
+.header .user-info .notice {
+    float: left;
+    position: relative;
+    margin-right: 27px;
+    cursor: pointer;
+}
+.header .user-info .notice .notice-img {
+    width: 16px;
+    height: 19px;
+    display: inline-block;
+}
+.header .user-info .notice .num {
+    width:10px;
+    height:10px; 
+    background:rgba(255,9,25,1);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 10px;
+    text-align: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+.header .user-info .username {
+    float: left;
+    margin-right: 17px;
+}
+.header .user-info .avatar-box {
+    float: left;
+    cursor: pointer;
+}
+.header .user-info .avatar {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: aquamarine;
+    margin-right: 10px;
+    margin-top: -7px;
+}
+.header .user-info .dropdown-icon {
+    width: 10px;
+    height: 5px;
+    display: inline-block;
+}
+.header .user-info .menu {
+    width: 100px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 1px 1px 3px #888;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+}
+.header .user-info .menu ul li a {
+    line-height: 40px;
+    color: #333;
+}
+
+
+.left-navbar {
+    width: 100px;
+    height: 100%;
+    padding-top: 52px;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    background-color: #EAEAF4;
+}
+.left-navbar ul li a {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    display: inline-block;
+}
+.left-navbar .active {
+    background-color: #fff;
 }
