@@ -1,113 +1,54 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!--
-<a routerLink="/personal-center" routerLinkActive="active">个人中心</a>
-<a routerLink="/stock" routerLinkActive="active">這裡是股票中心</a>
-<a routerLink="/home" routerLinkActive="active">這裡是首頁</a>
-<a routerLink="/class-list" routerLinkActive="active">這裡是班级列表</a>
-<a routerLink="/competition-list" routerLinkActive="active">這裡是竞赛列表</a>
-<p>
-  <ngb-alert type="success" [dismissible]=false >
-    <strong>Waring</strong>
-  </ngb-alert>
-</p>
-<p>
-  <ngb-tabset>
-    <ngb-tab title="选项一">
-      <ng-template ngbTabContent>
-        选项卡一的内容
-      </ng-template>
-    </ngb-tab>
-    <ngb-tab title="选项二">
-      <ng-template ngbTabContent>
-        选项卡二的内容
-      </ng-template>
-    </ngb-tab>
-  </ngb-tabset>
-</p>
-<div ngbDropdown >
-  <button class="btn btn-outline-primary" id="a" ngbDropdownToggle>喜欢的颜色</button>
-  <div ngbDropdownMenu aria-labelledby="a">
-    <button class="dropdown-item">红色</button>
-    <button class="dropdown-item">蓝色</button>
-    <button class="dropdown-item">绿色</button>
-  </div>
-</div>
-<div ngbDropdown >
-    <button class="btn btn-outline-primary" id="b" ngbDropdownToggle>喜欢的水果</button>
-    <div ngbDropdownMenu aria-labelledby="a">
-      <button class="dropdown-item">苹果</button>
-      <button class="dropdown-item">香蕉</button>
-      <button class="dropdown-item">橙子</button>
-    </div>
-  </div>
-
-    <div class="container-fluid">
-      <div class="">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="col-sm-3 col-md-3 col-lg-3">
-            111111111111111111111111111111
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
-             222222222222222222222222222222222222222222222222
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
-             3333333333333333333333333333333333
-          </div>
-          <div class="col-sm-3 col-md-3 col-lg-3">
-              4444444444444444444444444444444444444444444444444444444444
-          </div>
+<div class="main">
+    <div class="container-fluid col-padding-0">
+        <div class="navbar-header">
+            <a class="logo-img" href="javascript:">
+                <img src="./assets/images/logo.png" alt="">
+            </a>
+            <div class="search">
+                <img class="search-icon" src="./assets/images/icon/search-icon.png" alt="">
+                <input type="text" class="search-input" placeholder="请输入内容搜索" maxlength="30">
+            </div>
+            <div class="user-info">
+                <div class="notice">
+                    <img src="./assets/images/icon/notice-icon.png" alt="" class="notice-img">
+                    <span class="num">1</span>
+                </div>
+                <div class="username">你好，王姑娘</div>
+                <div class="avatar-box" (click)="showMenuList=!showMenuList">
+                    <div class="avatar"></div>
+                    <img src="./assets/images/icon/dropdown-icon.png" alt="" class="dropdown-icon">
+                </div>
+                <div class="menu" *ngIf="showMenuList">
+                    <ul>
+                        <li><a href="javascript:">编辑资料</a></li>
+                        <li><a href="javascript:" routerLink="/personal-center">个人中心</a></li>
+                        <li><a href="javascript:" routerLink="/login">退出登录</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row-content">
+            <div class="row">
+                <div class="col-xs-1 col-md-1 col-lg-1 col-padding-0 left-navbar">
+                    <ul>
+                        <li>
+                            <a routerLink="/personal-center" routerLinkActive="active">个人中心</a>
+                        </li>
+                        <li>
+                            <a routerLink="/stock" routerLinkActive="active">股票中心</a>
+                        </li>
+                        <li>
+                            <a routerLink="/task-list" routerLinkActive="active">任务列表</a>
+                        </li>
+                        <li>
+                            <a routerLink="/competition-list" routerLinkActive="active">竞赛列表</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-content">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
     </div>
-<br>
-<br>
-  -->
-  <div class="header">
-    <div class="logo-box">
-      <img src="" alt="" class="logo">
-      <div class="logo-text">扶诚金融</div>
-    </div>
-    <div class="search">
-      <img class="search-icon" src="./assets/images/icon/search-icon.png" alt="">
-      <input type="text" class="search-input" placeholder="请输入内容搜索" maxlength="30">
-    </div>
-    <div class="user-info">
-      <div class="notice">
-        <img src="./assets/images/icon/notice-icon.png" alt="" class="notice-img">
-        <span class="num">1</span>
-      </div>
-      <div class="username">你好，王姑娘</div>
-      <div class="avatar-box">
-        <div class="avatar"></div>
-        <img src="./assets/images/icon/dropdown-icon.png" alt="" class="dropdown-icon">
-      </div>
-      <div class="menu">
-        <ul>
-          <li><a href="javascript:">编辑资料</a></li>
-          <li><a href="javascript:" routerLink="/personal-center">个人中心</a></li>
-          <li><a href="javascript:" routerLink="/login">退出登录</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="left-navbar">
-    <ul>
-      <li>
-        <a routerLink="/personal-center" routerLinkActive="active">个人中心</a>
-      </li>
-      <li>
-          <a routerLink="/stock" routerLinkActive="active">股票中心</a>
-      </li>
-      <li>
-          <a routerLink="/class-list" routerLinkActive="active">班级分类</a>
-      </li>
-      <li>
-          <a routerLink="/competition-list" routerLinkActive="active">竞赛列表</a>
-      </li>
-    </ul>
-  </div>
-
-
-<router-outlet></router-outlet>
-<router-outlet name="home"></router-outlet>
-
+</div>
