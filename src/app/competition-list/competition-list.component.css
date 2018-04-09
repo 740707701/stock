@@ -1,3 +1,163 @@
-h1 {
-    color: blue;
+.competition-list-page {
+    height: 100%;
+    padding: 30px 40px;
+    background-color: #fff;
+}
+
+.competition-list-page .row-content {
+    height: 100%;
+}
+
+.competition-list-page .row-content .row {
+    height: 100%;
+}
+
+.competition-list-page .inline {
+    display: inline-block;
+}
+
+.competition-list-page .row-content .topbar {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.competition-list-page .row-content .topbar .pager {
+    float: right;
+    height: 60px;
+    margin-right: 48px;
+}
+
+.competition-list-page .row-content .topbar .pager a {
+    width: 25px;
+    height: 25px;
+    line-height: 21px;
+    text-align: center;
+    cursor: pointer;
+    color: #8D91B2;
+    outline: none;
+    display: inline-block;
+    border: 1px solid #8D91B2;
+    background-color: #fff;
+}
+
+.competition-list-page .row-content .topbar .pager .page-num {
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 21px;
+    cursor: default;
+    background-color: transparent;
+}
+
+.competition-list-page .row-content .list {
+    margin-right: 20px;
+}
+
+.competition-list-page .row-content .list,
+.competition-list-page .row-content .record {
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px rgba(38, 36, 56, 0.2);
+    height: 100%;
+    background-color: #F7F6FD;
+}
+
+.competition-list-page .row-content .list .table {
+    font-size: 14px;
+}
+
+.competition-list-page .row-content .list .table .thead td {
+    color: #B6B5C2;
+    border-top: none;
+}
+
+.competition-list-page .row-content .list .table tr:hover {
+    background-color: #fff;
+}
+
+.competition-list-page .row-content .list .table tr td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #19162C;
+    border-color: #fff;
+}
+
+.competition-list-page .row-content .list .competition-btn {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 0.75rem;
+    background-color: #3459FF;
+    color: #fff;
+    box-shadow: 4px 0px 6px #68639d;
+}
+
+.competition-list-page .row-content .record {
+    padding: 30px;
+}
+
+.competition-list-page .row-content .record .vs-bg {
+    width: 100%;
+    height: 120px;
+    border-radius: 10px 10px 0 0;
+    padding: 0 18px;
+    background-color: #676CE2;
+    color: #fff;
+    text-align: center;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-title {
+    line-height: 2.5;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box {
+    width: 100%;
+    color: #242424;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 4px 0px 6px #68639D;
+    padding: 18px;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .vs-btn {
+    font-family: "PingFangSC-Regular";
+    font-size: 20px;
+    font-style: oblique;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: middle;
+    color: #FFD43F;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .challenger {
+    display: inline-block;
+    /* color: #242424; */
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .challenger .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: slateblue;
+    margin: 0 auto;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .challenger .name {
+    line-height: 2.5;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .challenger .score {
+    font-size: 20px;
+    font-family: "PingFangSC-Medium";
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .progress {
+    margin-top: 10px;
+    background-color: #3459FF;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .progress .progress-bar {
+    background-color: #F14047;
 }

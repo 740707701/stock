@@ -1,5 +1,7 @@
 .task-list-page {
+    height: 100%;
     padding: 30px 40px;
+    background-color: #fff;
 }
 
 .task-list-page .inline {
@@ -11,6 +13,7 @@
 }
 
 .task-list-page .row-content {
+    height: 100%;
     border-radius: 4px;
     box-shadow: 0px 0px 30px rgba(38, 36, 56, 0.2)
 }
