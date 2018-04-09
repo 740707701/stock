@@ -34,17 +34,17 @@ import { LoginComponent } from './login/login.component';
     AppRoutingModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot({
-      radius: 79,
+      radius: 40,
       backgroundStrokeWidth: 0,
-      outerStrokeWidth: 5,
-      innerStrokeWidth: 5,
+      outerStrokeWidth: 4,
+      innerStrokeWidth: 4,
       animationDuration: 300,
-      space: -6, // 外圈和内圈之间的空间
+      space: -4, // 外圈和内圈之间的空间
       showUnits: false, // 是否显示单位
       titleColor: `#898ba2`,
       subtitleColor: `#898ba2`,
-      titleFontSize: `12`,
-      subtitleFontSize: `12`,
+      titleFontSize: `14`,
+      subtitleFontSize: `14`,
       clockwise: false // 是否顺时针或逆时针旋转
     })
   ],

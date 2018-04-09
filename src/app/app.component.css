@@ -7,11 +7,11 @@
 
 .navbar-header {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: #262438;
     color: #fff;
     font-family: 'PingFangSC-Regular';
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .navbar-header .logo-img img {
@@ -19,12 +19,14 @@
     width: 95px;
     margin-left: 6px;
     margin-right: 38px;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
+
+/*
 .navbar-header .search {
     float: left;
-    padding-top: 30px;
+    padding-top: 24px;
 }
 
 .navbar-header .search-icon {
@@ -55,11 +57,12 @@
 .navbar-header .search-input::-webkit-input-placeholder {
     color: #8C8DA9;
 }
+*/
 
 .navbar-header .user-info {
     float: right;
     margin-right: 64px;
-    padding-top: 30px;
+    padding-top: 26px;
 }
 
 .navbar-header .user-info .notice {
@@ -122,7 +125,7 @@
     text-align: center;
     box-shadow: 1px 1px 3px #888;
     position: absolute;
-    top: 80px;
+    top: 70px;
     right: 40px;
 }
 
@@ -135,7 +138,7 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    top: 80px;
+    top: 70px;
     left: 0;
     bottom: 0;
 }
@@ -143,17 +146,18 @@
 .left-navbar {
     max-width: 100px;
     height: 100%;
-    padding-top: 52px;
+    padding-top: 30px;
     position: fixed;
     left: 0;
-    top: 80px;
+    top: 70px;
     background-color: #EAEAF4;
+    font-size: 14px;
 }
 
 .left-navbar ul li a {
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     display: inline-block;
 }
@@ -169,4 +173,5 @@
     right: 0;
     bottom: 0;
     margin-left: 100px;
+    overflow-y: auto;
 }

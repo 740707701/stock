@@ -5,7 +5,7 @@
             <div class="status">
                 <span class="status-title inline">选择状态：</span>
                 <div class="dropdown inline">
-                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="task-status" data-toggle="dropdown" data-haspopup="true" aria-expanded="false">{{task_status}}</button>
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="task-status" data-toggle="dropdown" data-haspopup="true" aria-expanded="false">{{task_status}}</button>
                     <div class="dropdown-menu" aria-labelledby="task-status">
                         <a class="dropdown-item" href="javascript:" *ngFor="let status of taskStatus" (click)="selectStatus(status)">{{status}}</a>
                     </div>
@@ -35,7 +35,7 @@
                             <circle-progress [percent]="1/3*100" [title]="'1/3'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -45,7 +45,7 @@
                             <circle-progress [percent]="2/3*100" [title]="'2/3'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -55,7 +55,7 @@
                             <circle-progress [percent]="4/5*100" [title]="'4/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -65,7 +65,7 @@
                             <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -75,7 +75,7 @@
                             <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -85,7 +85,7 @@
                             <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -95,7 +95,7 @@
                             <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
@@ -105,17 +105,7 @@
                             <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
                         </div>
                         <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 pad-right-0">
-                    <div class="task-detail">
-                        <div class="task-title" style="background-color:#D30059">山东鲁东大学股票任务</div>
-                        <div class="task-circle">
-                            <circle-progress [percent]="2/5*100" [title]="'2/5'" [subtitle]="'完成次数'" [outerStrokeColor]="'#D30059'" [innerStrokeColor]="'#DFE6F5'"></circle-progress>
-                        </div>
-                        <div class="task-time">任务时间：2018年01月21日</div>
-                        <div class="task-btn">进行中</div>
+                        <button class="btn btn-sm task-btn" type="button">进行中</button>
                     </div>
                 </div>
             </div>
