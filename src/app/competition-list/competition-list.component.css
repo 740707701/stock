@@ -103,12 +103,12 @@
     border-radius: 10px 10px 0 0;
     padding: 0 18px;
     background-color: #676CE2;
-    color: #fff;
-    text-align: center;
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-title {
+    color: #fff;
     line-height: 2.5;
+    text-align: center;
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-box {
@@ -118,22 +118,20 @@
     border-radius: 10px;
     box-shadow: 4px 0px 6px #68639D;
     padding: 18px;
+    text-align: center;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-box .challenger-box {
+    display: flex;
+    justify-content: center;
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-box .vs-btn {
     font-family: "PingFangSC-Regular";
     font-size: 20px;
-    font-style: oblique;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    vertical-align: middle;
+    margin: 0 20px;
+    padding-top: 15px;
     color: #FFD43F;
-}
-
-.competition-list-page .row-content .record .vs-bg .vs-box .challenger {
-    display: inline-block;
-    /* color: #242424; */
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-box .challenger .avatar {
@@ -154,10 +152,41 @@
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-box .progress {
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: #3459FF;
 }
 
 .competition-list-page .row-content .record .vs-bg .vs-box .progress .progress-bar {
     background-color: #F14047;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info {
+    padding: 0 30px;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info .title {
+    line-height: 2.5;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info .vs-detail {
+    width: 100%;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info .vs-detail li {
+    line-height: 3;
+    text-align: left;
+    display: flex;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info .vs-detail li span {
+    padding-left: 20px;
+    flex: 1;
+}
+
+.competition-list-page .row-content .record .vs-bg .vs-info .vs-detail li .name {
+    color: #8D91B2;
+    padding: 0;
 }
